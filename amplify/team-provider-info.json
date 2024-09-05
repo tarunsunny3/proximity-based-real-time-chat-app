@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-proxichat-dev-96200-authRole",
+      "UnauthRoleArn": "arn:aws:iam::654654576013:role/amplify-proxichat-dev-96200-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::654654576013:role/amplify-proxichat-dev-96200-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-proxichat-dev-96200-deployment",
+      "UnauthRoleName": "amplify-proxichat-dev-96200-unauthRole",
+      "StackName": "amplify-proxichat-dev-96200",
+      "StackId": "arn:aws:cloudformation:us-east-1:654654576013:stack/amplify-proxichat-dev-96200/9b2b1640-21ee-11ef-8ce3-0ec4917baf6f",
+      "AmplifyAppId": "d3e1znxpzzrsy"
+    },
+    "categories": {
+      "auth": {
+        "proxichat5e1944b0": {}
+      },
+      "api": {
+        "proxichat": {}
+      }
+    }
+  }
+}

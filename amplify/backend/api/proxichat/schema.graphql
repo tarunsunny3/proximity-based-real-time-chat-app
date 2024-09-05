@@ -1,0 +1,87 @@
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  profileImageId: String
+  fullname: String!
+  email: String! @index(name: "byEmail", queryField: "userByEmail")
+  status: UserStatus
+  lastSeen: AWSDateTime
+  conversations: [UserConversations] @hasMany(indexName: "byUserConversation", fields: ["id"])
+  messages: [Message] @hasMany(indexName: "bySender", fields: ["id"])
+  interests: [String]
+  blockedUsersList: [BlockedUser] @hasMany(indexName: "byUser", fields: ["id"])
+}
+
+type Conversation @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  participants: [UserConversations] @hasMany(indexName: "byConversationUser", fields: ["id"])
+  messages: [Message] @hasMany(indexName: "byConversation", fields: ["id"])
+  lastMessage: Message @hasOne
+}
+type UserConversations @model @auth(rules: [{allow: public}]){
+  id: ID!
+  userId: ID! @index(name: "byUserConversation")
+  user: User @belongsTo(fields: ["userId"])
+  conversationId: ID! @index(name: "byConversationUser")
+  conversation: Conversation! @belongsTo(fields: ["conversationId"])
+  title: String!
+  type: String @default(value: "UserConversations")
+	@index(
+		name: "userConversationsByUpdatedAt"
+		queryField: "userConversationsByUpdatedAt"
+		sortKeyFields: ["updatedAt"]
+	)
+  updatedAt: String!
+  unreadMessagesCount: Int!
+  
+}
+
+type Message @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  content: MessageContent!
+  status: MessageStatus!
+  read: Boolean
+  conversationId: ID! @index(name: "byConversation", sortKeyFields: "updatedAt")
+  senderId: ID! @index(name: "bySender")
+  sender: User @belongsTo(fields: ["senderId"])
+  type: String @default(value: "Message")
+	@index(
+		name: "messagesByUpdatedAt"
+		queryField: "messagesByUpdatedAt"
+		sortKeyFields: ["updatedAt"]
+	)
+  updatedAt: String!
+
+}
+
+type BlockedUser @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  userId: ID! @index(name: "byUser")
+  blockedUserId: ID!
+  blockedUser: User @belongsTo(fields: ["blockedUserId"])
+}
+
+type Location @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  userId: ID!
+  latitude: Float!
+  longitude: Float!
+  timestamp: AWSDateTime!
+}
+
+
+enum UserStatus {
+  ONLINE
+  OFFLINE
+  AWAY
+}
+
+type MessageContent {
+  text: String
+  fileURL: String
+}
+
+enum MessageStatus {
+  SENT
+  DELIVERED
+  READ
+}

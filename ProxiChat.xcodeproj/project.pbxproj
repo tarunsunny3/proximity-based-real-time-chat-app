@@ -1,0 +1,1016 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E87BF4F6E3C139913D43CA8 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C3249BEB4828554B93CAC5 /* User+Schema.swift */; };
+		1A472A73B8D291570B9B076A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F72EF61AC997F13006EE59E /* Location.swift */; };
+		28FCED95B4E3420A2D507BD6 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3552DDD80249E3F67D94AA1 /* UserStatus.swift */; };
+		2DA8AE70C033AE6009095407 /* amplify/generated/models/UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970597212C02A2E700022DDC /* amplify/generated/models/UserStatus.swift */; };
+		4E4AC5D74BA3B287A33C24C9 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90BB59E0EEB3C98B8969EC1 /* Conversation.swift */; };
+		6DA1076555D11C1DD928C049 /* MessageContent+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5AC5BD7F6C42FD6201DCB /* MessageContent+Schema.swift */; };
+		773C663696E10DBA44251BCC /* UserConversations+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DD11C1F7382192566AE265 /* UserConversations+Schema.swift */; };
+		79380016B0CBDACBB87D826E /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D67B6F8144E57884958DE7AC /* awsconfiguration.json */; };
+		7C74735322851BBC9B37DFE9 /* MessageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2974B1BDCE6197D89B83FBEE /* MessageContent.swift */; };
+		84B4BB2633E2C0AB4569BC4C /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6137536CCB0195E462435EF7 /* Message+Schema.swift */; };
+		8C0F6A1FF496B9B974507F85 /* Conversation+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC96D4DEAA24628F4951F72 /* Conversation+Schema.swift */; };
+		93AC5911C1B78A29D9C0BC06 /* BlockedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9163D2CDB76249031E91843 /* BlockedUser.swift */; };
+		970594552C02A12200022DDC /* ProxiChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970594542C02A12200022DDC /* ProxiChatApp.swift */; };
+		970594572C02A12200022DDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970594562C02A12200022DDC /* ContentView.swift */; };
+		9705945B2C02A12400022DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9705945A2C02A12400022DDC /* Assets.xcassets */; };
+		9705945E2C02A12400022DDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9705945D2C02A12400022DDC /* Preview Assets.xcassets */; };
+		970594682C02A12400022DDC /* ProxiChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970594672C02A12400022DDC /* ProxiChatTests.swift */; };
+		970594722C02A12400022DDC /* ProxiChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970594712C02A12400022DDC /* ProxiChatUITests.swift */; };
+		970594742C02A12400022DDC /* ProxiChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970594732C02A12400022DDC /* ProxiChatUITestsLaunchTests.swift */; };
+		970594822C02A29A00022DDC /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 970594812C02A29A00022DDC /* AWSAPIPlugin */; };
+		970594842C02A29A00022DDC /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 970594832C02A29A00022DDC /* AWSCognitoAuthPlugin */; };
+		970594862C02A29A00022DDC /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 970594852C02A29A00022DDC /* AWSDataStorePlugin */; };
+		970594882C02A29A00022DDC /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 970594872C02A29A00022DDC /* AWSPluginsCore */; };
+		9705948A2C02A29A00022DDC /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 970594892C02A29A00022DDC /* Amplify */; };
+		970599852C02A2E700022DDC /* amplify/generated/models/AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970597112C02A2E700022DDC /* amplify/generated/models/AmplifyModels.swift */; };
+		9705998D2C02A2E700022DDC /* amplify/generated/models/Location+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970597192C02A2E700022DDC /* amplify/generated/models/Location+Schema.swift */; };
+		970599932C02A2E700022DDC /* amplify/generated/models/User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9705971F2C02A2E700022DDC /* amplify/generated/models/User.swift */; };
+		970599942C02A2E700022DDC /* amplify/generated/models/User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970597202C02A2E700022DDC /* amplify/generated/models/User+Schema.swift */; };
+		970599952C02A2E700022DDC /* amplify/generated/models/UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970597212C02A2E700022DDC /* amplify/generated/models/UserStatus.swift */; };
+		970599BF2C02A65B00022DDC /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9705999E2C02A65A00022DDC /* SessionManager.swift */; };
+		970599C02C02A65B00022DDC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599A12C02A65B00022DDC /* LoginView.swift */; };
+		970599C12C02A65B00022DDC /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599A22C02A65B00022DDC /* RegisterView.swift */; };
+		970599C22C02A65B00022DDC /* SignupConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599A32C02A65B00022DDC /* SignupConfirmationView.swift */; };
+		970599C32C02A65B00022DDC /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599A42C02A65B00022DDC /* SignupView.swift */; };
+		970599C72C02A65B00022DDC /* ChatViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599A92C02A65B00022DDC /* ChatViewNew.swift */; };
+		970599C82C02A65B00022DDC /* ConversationsViewOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599AB2C02A65B00022DDC /* ConversationsViewOld.swift */; };
+		970599C92C02A65B00022DDC /* ConversationsViewModelOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599AC2C02A65B00022DDC /* ConversationsViewModelOld.swift */; };
+		970599CA2C02A65B00022DDC /* ConversationsViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599AD2C02A65B00022DDC /* ConversationsViewNew.swift */; };
+		970599CB2C02A65B00022DDC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599AF2C02A65B00022DDC /* MainView.swift */; };
+		970599CC2C02A65B00022DDC /* NearByUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599B12C02A65B00022DDC /* NearByUsersView.swift */; };
+		970599CD2C02A65B00022DDC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599B32C02A65B00022DDC /* ProfileView.swift */; };
+		970599CE2C02A65B00022DDC /* ModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599B62C02A65B00022DDC /* ModelExtensions.swift */; };
+		970599CF2C02A65B00022DDC /* NearbyUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599B82C02A65B00022DDC /* NearbyUsersViewModel.swift */; };
+		970599D02C02A65B00022DDC /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599BA2C02A65B00022DDC /* InputFieldView.swift */; };
+		970599D12C02A65B00022DDC /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970599BC2C02A65B00022DDC /* RowView.swift */; };
+		97BC0B3E2C05254000FC1075 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC0B3D2C05254000FC1075 /* ChatView.swift */; };
+		97BC0B402C05255700FC1075 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC0B3F2C05255700FC1075 /* ChatViewModel.swift */; };
+		97BC17EE2C052A3E00FC1075 /* amplify/generated/models/BlockedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC157A2C052A3E00FC1075 /* amplify/generated/models/BlockedUser.swift */; };
+		97BC17F12C052A3E00FC1075 /* amplify/generated/models/Conversation+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC157D2C052A3E00FC1075 /* amplify/generated/models/Conversation+Schema.swift */; };
+		97BC17F52C052A3E00FC1075 /* amplify/generated/models/Location+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC15812C052A3E00FC1075 /* amplify/generated/models/Location+Schema.swift */; };
+		97BC17FB2C052A3E00FC1075 /* amplify/generated/models/User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC15872C052A3E00FC1075 /* amplify/generated/models/User.swift */; };
+		97BC17FD2C052A3E00FC1075 /* amplify/generated/models/UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC15892C052A3E00FC1075 /* amplify/generated/models/UserStatus.swift */; };
+		97BDC5FE2C040E550095FFF7 /* ConversationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDC5FD2C040E550095FFF7 /* ConversationsViewModel.swift */; };
+		97BDC6012C040F540095FFF7 /* Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDC6002C040F540095FFF7 /* Queries.swift */; };
+		97BDC6032C040F950095FFF7 /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDC6022C040F950095FFF7 /* ConversationsView.swift */; };
+		97F23CD42C17DD6200D38E90 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F23CD32C17DD6200D38E90 /* LocationManager.swift */; };
+		B0C258ADE9CEFD486717F03E /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E282E82A57CDD73BF9B544 /* AmplifyModels.swift */; };
+		B5218D5266FE7EEBFCFD9FB9 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CE28542075BA370BA3D93 /* amplifyconfiguration.json */; };
+		BCA500CCCBC83E293263BE13 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A29D2447F7874CF03BF40 /* Message.swift */; };
+		BF1B959B339667D59A8756A8 /* BlockedUser+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02BA9602F9C40B9742521 /* BlockedUser+Schema.swift */; };
+		C35FB8BA99E2D0270BC7CF39 /* MessageStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79BC3C428810EBDEB8A0821 /* MessageStatus.swift */; };
+		D7D61F5ED302B2AABA87C992 /* Location+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A769AFD645ACB55174B9C /* Location+Schema.swift */; };
+		E8CBFC07E748F6D0D6787030 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E394E78EFE1AC3C149DADAB /* User.swift */; };
+		EA5A2F6B928427E909C883A3 /* UserConversations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23AADDA972FB9BB64342F92 /* UserConversations.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		970594642C02A12400022DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 970594492C02A12200022DDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 970594502C02A12200022DDC;
+			remoteInfo = ProxiChat;
+		};
+		9705946E2C02A12400022DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 970594492C02A12200022DDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 970594502C02A12200022DDC;
+			remoteInfo = ProxiChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		205A769AFD645ACB55174B9C /* Location+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Location+Schema.swift"; path = "amplify/generated/models/Location+Schema.swift"; sourceTree = "<group>"; };
+		22C3249BEB4828554B93CAC5 /* User+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "User+Schema.swift"; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
+		2974B1BDCE6197D89B83FBEE /* MessageContent.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = MessageContent.swift; path = amplify/generated/models/MessageContent.swift; sourceTree = "<group>"; };
+		2F72EF61AC997F13006EE59E /* Location.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Location.swift; path = amplify/generated/models/Location.swift; sourceTree = "<group>"; };
+		3B6CE28542075BA370BA3D93 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		4CC96D4DEAA24628F4951F72 /* Conversation+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Conversation+Schema.swift"; path = "amplify/generated/models/Conversation+Schema.swift"; sourceTree = "<group>"; };
+		6137536CCB0195E462435EF7 /* Message+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Message+Schema.swift"; path = "amplify/generated/models/Message+Schema.swift"; sourceTree = "<group>"; };
+		6E394E78EFE1AC3C149DADAB /* User.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = User.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
+		79E282E82A57CDD73BF9B544 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		829A29D2447F7874CF03BF40 /* Message.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Message.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
+		970594512C02A12200022DDC /* ProxiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProxiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		970594542C02A12200022DDC /* ProxiChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxiChatApp.swift; sourceTree = "<group>"; };
+		970594562C02A12200022DDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9705945A2C02A12400022DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9705945D2C02A12400022DDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		970594632C02A12400022DDC /* ProxiChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxiChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		970594672C02A12400022DDC /* ProxiChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxiChatTests.swift; sourceTree = "<group>"; };
+		9705946D2C02A12400022DDC /* ProxiChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxiChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		970594712C02A12400022DDC /* ProxiChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxiChatUITests.swift; sourceTree = "<group>"; };
+		970594732C02A12400022DDC /* ProxiChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxiChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		970597112C02A2E700022DDC /* amplify/generated/models/AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		970597192C02A2E700022DDC /* amplify/generated/models/Location+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Location+Schema.swift"; sourceTree = "<group>"; };
+		9705971F2C02A2E700022DDC /* amplify/generated/models/User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
+		970597202C02A2E700022DDC /* amplify/generated/models/User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
+		970597212C02A2E700022DDC /* amplify/generated/models/UserStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/UserStatus.swift; sourceTree = "<group>"; };
+		9705999E2C02A65A00022DDC /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		970599A12C02A65B00022DDC /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		970599A22C02A65B00022DDC /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		970599A32C02A65B00022DDC /* SignupConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupConfirmationView.swift; sourceTree = "<group>"; };
+		970599A42C02A65B00022DDC /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		970599A62C02A65B00022DDC /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		970599A72C02A65B00022DDC /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		970599A82C02A65B00022DDC /* ChatViewModelNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModelNew.swift; sourceTree = "<group>"; };
+		970599A92C02A65B00022DDC /* ChatViewNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewNew.swift; sourceTree = "<group>"; };
+		970599AB2C02A65B00022DDC /* ConversationsViewOld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewOld.swift; sourceTree = "<group>"; };
+		970599AC2C02A65B00022DDC /* ConversationsViewModelOld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewModelOld.swift; sourceTree = "<group>"; };
+		970599AD2C02A65B00022DDC /* ConversationsViewNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewNew.swift; sourceTree = "<group>"; };
+		970599AF2C02A65B00022DDC /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		970599B12C02A65B00022DDC /* NearByUsersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByUsersView.swift; sourceTree = "<group>"; };
+		970599B32C02A65B00022DDC /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		970599B62C02A65B00022DDC /* ModelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelExtensions.swift; sourceTree = "<group>"; };
+		970599B82C02A65B00022DDC /* NearbyUsersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyUsersViewModel.swift; sourceTree = "<group>"; };
+		970599BA2C02A65B00022DDC /* InputFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
+		970599BC2C02A65B00022DDC /* RowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		97BC0B3D2C05254000FC1075 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		97BC0B3F2C05255700FC1075 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		97BC157A2C052A3E00FC1075 /* amplify/generated/models/BlockedUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/BlockedUser.swift; sourceTree = "<group>"; };
+		97BC157D2C052A3E00FC1075 /* amplify/generated/models/Conversation+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Conversation+Schema.swift"; sourceTree = "<group>"; };
+		97BC157F2C052A3E00FC1075 /* amplify/generated/models/ConversationUser+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ConversationUser+Schema.swift"; sourceTree = "<group>"; };
+		97BC15812C052A3E00FC1075 /* amplify/generated/models/Location+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Location+Schema.swift"; sourceTree = "<group>"; };
+		97BC15872C052A3E00FC1075 /* amplify/generated/models/User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
+		97BC15892C052A3E00FC1075 /* amplify/generated/models/UserStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/UserStatus.swift; sourceTree = "<group>"; };
+		97BDC5FD2C040E550095FFF7 /* ConversationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewModel.swift; sourceTree = "<group>"; };
+		97BDC6002C040F540095FFF7 /* Queries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queries.swift; sourceTree = "<group>"; };
+		97BDC6022C040F950095FFF7 /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
+		97F23CD32C17DD6200D38E90 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		9D9BB9CE30E98526F0FFC15E /* ConversationUser+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "ConversationUser+Schema.swift"; path = "amplify/generated/models/ConversationUser+Schema.swift"; sourceTree = "<group>"; };
+		C8F02BA9602F9C40B9742521 /* BlockedUser+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "BlockedUser+Schema.swift"; path = "amplify/generated/models/BlockedUser+Schema.swift"; sourceTree = "<group>"; };
+		C8F5AC5BD7F6C42FD6201DCB /* MessageContent+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "MessageContent+Schema.swift"; path = "amplify/generated/models/MessageContent+Schema.swift"; sourceTree = "<group>"; };
+		D3D5562D2315D733C5C6DE35 /* ConversationUser.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = ConversationUser.swift; path = amplify/generated/models/ConversationUser.swift; sourceTree = "<group>"; };
+		D67B6F8144E57884958DE7AC /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		D79BC3C428810EBDEB8A0821 /* MessageStatus.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = MessageStatus.swift; path = amplify/generated/models/MessageStatus.swift; sourceTree = "<group>"; };
+		E3552DDD80249E3F67D94AA1 /* UserStatus.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = UserStatus.swift; path = amplify/generated/models/UserStatus.swift; sourceTree = "<group>"; };
+		E90BB59E0EEB3C98B8969EC1 /* Conversation.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Conversation.swift; path = amplify/generated/models/Conversation.swift; sourceTree = "<group>"; };
+		E9163D2CDB76249031E91843 /* BlockedUser.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = BlockedUser.swift; path = amplify/generated/models/BlockedUser.swift; sourceTree = "<group>"; };
+		F23AADDA972FB9BB64342F92 /* UserConversations.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = UserConversations.swift; path = amplify/generated/models/UserConversations.swift; sourceTree = "<group>"; };
+		F8DD11C1F7382192566AE265 /* UserConversations+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "UserConversations+Schema.swift"; path = "amplify/generated/models/UserConversations+Schema.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9705944E2C02A12200022DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970594882C02A29A00022DDC /* AWSPluginsCore in Frameworks */,
+				9705948A2C02A29A00022DDC /* Amplify in Frameworks */,
+				970594862C02A29A00022DDC /* AWSDataStorePlugin in Frameworks */,
+				970594822C02A29A00022DDC /* AWSAPIPlugin in Frameworks */,
+				970594842C02A29A00022DDC /* AWSCognitoAuthPlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		970594602C02A12400022DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9705946A2C02A12400022DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		970594482C02A12200022DDC = {
+			isa = PBXGroup;
+			children = (
+				970594532C02A12200022DDC /* ProxiChat */,
+				970594662C02A12400022DDC /* ProxiChatTests */,
+				970594702C02A12400022DDC /* ProxiChatUITests */,
+				970594522C02A12200022DDC /* Products */,
+				AB0F04FBB5A739FC139D8A03 /* AmplifyConfig */,
+				E27FD6035D66B50E2236BA38 /* AmplifyModels */,
+			);
+			sourceTree = "<group>";
+		};
+		970594522C02A12200022DDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				970594512C02A12200022DDC /* ProxiChat.app */,
+				970594632C02A12400022DDC /* ProxiChatTests.xctest */,
+				9705946D2C02A12400022DDC /* ProxiChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		970594532C02A12200022DDC /* ProxiChat */ = {
+			isa = PBXGroup;
+			children = (
+				97BDC5FF2C040F450095FFF7 /* GraphQL */,
+				970599BE2C02A65B00022DDC /* Components */,
+				970599B72C02A65B00022DDC /* Extensions */,
+				970599A02C02A65A00022DDC /* Utils */,
+				970599B92C02A65B00022DDC /* ViewModels */,
+				970599B52C02A65B00022DDC /* Views */,
+				970594542C02A12200022DDC /* ProxiChatApp.swift */,
+				970594562C02A12200022DDC /* ContentView.swift */,
+				9705945A2C02A12400022DDC /* Assets.xcassets */,
+				9705945C2C02A12400022DDC /* Preview Content */,
+			);
+			path = ProxiChat;
+			sourceTree = "<group>";
+		};
+		9705945C2C02A12400022DDC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9705945D2C02A12400022DDC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		970594662C02A12400022DDC /* ProxiChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				970594672C02A12400022DDC /* ProxiChatTests.swift */,
+			);
+			path = ProxiChatTests;
+			sourceTree = "<group>";
+		};
+		970594702C02A12400022DDC /* ProxiChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				970594712C02A12400022DDC /* ProxiChatUITests.swift */,
+				970594732C02A12400022DDC /* ProxiChatUITestsLaunchTests.swift */,
+			);
+			path = ProxiChatUITests;
+			sourceTree = "<group>";
+		};
+		9705999F2C02A65A00022DDC /* SessionManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SessionManager;
+			sourceTree = "<group>";
+		};
+		970599A02C02A65A00022DDC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9705999F2C02A65A00022DDC /* SessionManager */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		970599A52C02A65B00022DDC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				970599A12C02A65B00022DDC /* LoginView.swift */,
+				970599A22C02A65B00022DDC /* RegisterView.swift */,
+				970599A32C02A65B00022DDC /* SignupConfirmationView.swift */,
+				970599A42C02A65B00022DDC /* SignupView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		970599AA2C02A65B00022DDC /* ChatviewOld */ = {
+			isa = PBXGroup;
+			children = (
+				970599A62C02A65B00022DDC /* ChatView.swift */,
+				970599A72C02A65B00022DDC /* ChatViewModel.swift */,
+				970599A82C02A65B00022DDC /* ChatViewModelNew.swift */,
+				970599A92C02A65B00022DDC /* ChatViewNew.swift */,
+			);
+			path = ChatviewOld;
+			sourceTree = "<group>";
+		};
+		970599AE2C02A65B00022DDC /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				970599AB2C02A65B00022DDC /* ConversationsViewOld.swift */,
+				970599AC2C02A65B00022DDC /* ConversationsViewModelOld.swift */,
+				970599AD2C02A65B00022DDC /* ConversationsViewNew.swift */,
+				97BDC6022C040F950095FFF7 /* ConversationsView.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		970599B02C02A65B00022DDC /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				970599AF2C02A65B00022DDC /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		970599B22C02A65B00022DDC /* NearByUsers */ = {
+			isa = PBXGroup;
+			children = (
+				970599B12C02A65B00022DDC /* NearByUsersView.swift */,
+			);
+			path = NearByUsers;
+			sourceTree = "<group>";
+		};
+		970599B42C02A65B00022DDC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				970599B32C02A65B00022DDC /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		970599B52C02A65B00022DDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97BC0B3C2C05252F00FC1075 /* ChatView */,
+				970599A52C02A65B00022DDC /* Authentication */,
+				970599AA2C02A65B00022DDC /* ChatviewOld */,
+				970599AE2C02A65B00022DDC /* Conversation */,
+				970599B02C02A65B00022DDC /* MainView */,
+				970599B22C02A65B00022DDC /* NearByUsers */,
+				970599B42C02A65B00022DDC /* Profile */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		970599B72C02A65B00022DDC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				970599B62C02A65B00022DDC /* ModelExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		970599B92C02A65B00022DDC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9705999E2C02A65A00022DDC /* SessionManager.swift */,
+				970599B82C02A65B00022DDC /* NearbyUsersViewModel.swift */,
+				97BDC5FD2C040E550095FFF7 /* ConversationsViewModel.swift */,
+				97BC0B3F2C05255700FC1075 /* ChatViewModel.swift */,
+				97F23CD32C17DD6200D38E90 /* LocationManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		970599BB2C02A65B00022DDC /* InputField */ = {
+			isa = PBXGroup;
+			children = (
+				970599BA2C02A65B00022DDC /* InputFieldView.swift */,
+			);
+			path = InputField;
+			sourceTree = "<group>";
+		};
+		970599BD2C02A65B00022DDC /* RowView */ = {
+			isa = PBXGroup;
+			children = (
+				970599BC2C02A65B00022DDC /* RowView.swift */,
+			);
+			path = RowView;
+			sourceTree = "<group>";
+		};
+		970599BE2C02A65B00022DDC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				970599BB2C02A65B00022DDC /* InputField */,
+				970599BD2C02A65B00022DDC /* RowView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		97BC0B3C2C05252F00FC1075 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				97BC0B3D2C05254000FC1075 /* ChatView.swift */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		97BDC5FF2C040F450095FFF7 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				97BDC6002C040F540095FFF7 /* Queries.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		AB0F04FBB5A739FC139D8A03 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				D67B6F8144E57884958DE7AC /* awsconfiguration.json */,
+				3B6CE28542075BA370BA3D93 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+		E27FD6035D66B50E2236BA38 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				79E282E82A57CDD73BF9B544 /* AmplifyModels.swift */,
+				C8F02BA9602F9C40B9742521 /* BlockedUser+Schema.swift */,
+				E9163D2CDB76249031E91843 /* BlockedUser.swift */,
+				4CC96D4DEAA24628F4951F72 /* Conversation+Schema.swift */,
+				E90BB59E0EEB3C98B8969EC1 /* Conversation.swift */,
+				9D9BB9CE30E98526F0FFC15E /* ConversationUser+Schema.swift */,
+				D3D5562D2315D733C5C6DE35 /* ConversationUser.swift */,
+				205A769AFD645ACB55174B9C /* Location+Schema.swift */,
+				2F72EF61AC997F13006EE59E /* Location.swift */,
+				6137536CCB0195E462435EF7 /* Message+Schema.swift */,
+				829A29D2447F7874CF03BF40 /* Message.swift */,
+				C8F5AC5BD7F6C42FD6201DCB /* MessageContent+Schema.swift */,
+				2974B1BDCE6197D89B83FBEE /* MessageContent.swift */,
+				D79BC3C428810EBDEB8A0821 /* MessageStatus.swift */,
+				22C3249BEB4828554B93CAC5 /* User+Schema.swift */,
+				6E394E78EFE1AC3C149DADAB /* User.swift */,
+				E3552DDD80249E3F67D94AA1 /* UserStatus.swift */,
+				970597112C02A2E700022DDC /* amplify/generated/models/AmplifyModels.swift */,
+				970597192C02A2E700022DDC /* amplify/generated/models/Location+Schema.swift */,
+				970597202C02A2E700022DDC /* amplify/generated/models/User+Schema.swift */,
+				9705971F2C02A2E700022DDC /* amplify/generated/models/User.swift */,
+				970597212C02A2E700022DDC /* amplify/generated/models/UserStatus.swift */,
+				97BC157A2C052A3E00FC1075 /* amplify/generated/models/BlockedUser.swift */,
+				97BC157D2C052A3E00FC1075 /* amplify/generated/models/Conversation+Schema.swift */,
+				97BC157F2C052A3E00FC1075 /* amplify/generated/models/ConversationUser+Schema.swift */,
+				97BC15812C052A3E00FC1075 /* amplify/generated/models/Location+Schema.swift */,
+				97BC15872C052A3E00FC1075 /* amplify/generated/models/User.swift */,
+				97BC15892C052A3E00FC1075 /* amplify/generated/models/UserStatus.swift */,
+				F8DD11C1F7382192566AE265 /* UserConversations+Schema.swift */,
+				F23AADDA972FB9BB64342F92 /* UserConversations.swift */,
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		970594502C02A12200022DDC /* ProxiChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 970594772C02A12400022DDC /* Build configuration list for PBXNativeTarget "ProxiChat" */;
+			buildPhases = (
+				9705944D2C02A12200022DDC /* Sources */,
+				9705944E2C02A12200022DDC /* Frameworks */,
+				9705944F2C02A12200022DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProxiChat;
+			packageProductDependencies = (
+				970594812C02A29A00022DDC /* AWSAPIPlugin */,
+				970594832C02A29A00022DDC /* AWSCognitoAuthPlugin */,
+				970594852C02A29A00022DDC /* AWSDataStorePlugin */,
+				970594872C02A29A00022DDC /* AWSPluginsCore */,
+				970594892C02A29A00022DDC /* Amplify */,
+			);
+			productName = ProxiChat;
+			productReference = 970594512C02A12200022DDC /* ProxiChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		970594622C02A12400022DDC /* ProxiChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9705947A2C02A12400022DDC /* Build configuration list for PBXNativeTarget "ProxiChatTests" */;
+			buildPhases = (
+				9705945F2C02A12400022DDC /* Sources */,
+				970594602C02A12400022DDC /* Frameworks */,
+				970594612C02A12400022DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				970594652C02A12400022DDC /* PBXTargetDependency */,
+			);
+			name = ProxiChatTests;
+			productName = ProxiChatTests;
+			productReference = 970594632C02A12400022DDC /* ProxiChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9705946C2C02A12400022DDC /* ProxiChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9705947D2C02A12400022DDC /* Build configuration list for PBXNativeTarget "ProxiChatUITests" */;
+			buildPhases = (
+				970594692C02A12400022DDC /* Sources */,
+				9705946A2C02A12400022DDC /* Frameworks */,
+				9705946B2C02A12400022DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9705946F2C02A12400022DDC /* PBXTargetDependency */,
+			);
+			name = ProxiChatUITests;
+			productName = ProxiChatUITests;
+			productReference = 9705946D2C02A12400022DDC /* ProxiChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		970594492C02A12200022DDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					970594502C02A12200022DDC = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					970594622C02A12400022DDC = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 970594502C02A12200022DDC;
+					};
+					9705946C2C02A12400022DDC = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 970594502C02A12200022DDC;
+					};
+				};
+			};
+			buildConfigurationList = 9705944C2C02A12200022DDC /* Build configuration list for PBXProject "ProxiChat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 970594482C02A12200022DDC;
+			packageReferences = (
+				970594802C02A29A00022DDC /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
+			productRefGroup = 970594522C02A12200022DDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				970594502C02A12200022DDC /* ProxiChat */,
+				970594622C02A12400022DDC /* ProxiChatTests */,
+				9705946C2C02A12400022DDC /* ProxiChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9705944F2C02A12200022DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9705945E2C02A12400022DDC /* Preview Assets.xcassets in Resources */,
+				9705945B2C02A12400022DDC /* Assets.xcassets in Resources */,
+				79380016B0CBDACBB87D826E /* awsconfiguration.json in Resources */,
+				B5218D5266FE7EEBFCFD9FB9 /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		970594612C02A12400022DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9705946B2C02A12400022DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9705944D2C02A12200022DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970599C32C02A65B00022DDC /* SignupView.swift in Sources */,
+				97BC0B3E2C05254000FC1075 /* ChatView.swift in Sources */,
+				970594572C02A12200022DDC /* ContentView.swift in Sources */,
+				970594552C02A12200022DDC /* ProxiChatApp.swift in Sources */,
+				B0C258ADE9CEFD486717F03E /* AmplifyModels.swift in Sources */,
+				BF1B959B339667D59A8756A8 /* BlockedUser+Schema.swift in Sources */,
+				97BDC5FE2C040E550095FFF7 /* ConversationsViewModel.swift in Sources */,
+				970599CE2C02A65B00022DDC /* ModelExtensions.swift in Sources */,
+				93AC5911C1B78A29D9C0BC06 /* BlockedUser.swift in Sources */,
+				8C0F6A1FF496B9B974507F85 /* Conversation+Schema.swift in Sources */,
+				4E4AC5D74BA3B287A33C24C9 /* Conversation.swift in Sources */,
+				970599CB2C02A65B00022DDC /* MainView.swift in Sources */,
+				97F23CD42C17DD6200D38E90 /* LocationManager.swift in Sources */,
+				97BDC6032C040F950095FFF7 /* ConversationsView.swift in Sources */,
+				970599C22C02A65B00022DDC /* SignupConfirmationView.swift in Sources */,
+				970599932C02A2E700022DDC /* amplify/generated/models/User.swift in Sources */,
+				970599CA2C02A65B00022DDC /* ConversationsViewNew.swift in Sources */,
+				D7D61F5ED302B2AABA87C992 /* Location+Schema.swift in Sources */,
+				97BC17EE2C052A3E00FC1075 /* amplify/generated/models/BlockedUser.swift in Sources */,
+				970599952C02A2E700022DDC /* amplify/generated/models/UserStatus.swift in Sources */,
+				1A472A73B8D291570B9B076A /* Location.swift in Sources */,
+				970599C12C02A65B00022DDC /* RegisterView.swift in Sources */,
+				84B4BB2633E2C0AB4569BC4C /* Message+Schema.swift in Sources */,
+				970599CC2C02A65B00022DDC /* NearByUsersView.swift in Sources */,
+				970599BF2C02A65B00022DDC /* SessionManager.swift in Sources */,
+				970599852C02A2E700022DDC /* amplify/generated/models/AmplifyModels.swift in Sources */,
+				BCA500CCCBC83E293263BE13 /* Message.swift in Sources */,
+				970599D02C02A65B00022DDC /* InputFieldView.swift in Sources */,
+				970599C82C02A65B00022DDC /* ConversationsViewOld.swift in Sources */,
+				97BC17F12C052A3E00FC1075 /* amplify/generated/models/Conversation+Schema.swift in Sources */,
+				970599C72C02A65B00022DDC /* ChatViewNew.swift in Sources */,
+				97BC17FB2C052A3E00FC1075 /* amplify/generated/models/User.swift in Sources */,
+				6DA1076555D11C1DD928C049 /* MessageContent+Schema.swift in Sources */,
+				970599C92C02A65B00022DDC /* ConversationsViewModelOld.swift in Sources */,
+				7C74735322851BBC9B37DFE9 /* MessageContent.swift in Sources */,
+				C35FB8BA99E2D0270BC7CF39 /* MessageStatus.swift in Sources */,
+				0E87BF4F6E3C139913D43CA8 /* User+Schema.swift in Sources */,
+				970599CD2C02A65B00022DDC /* ProfileView.swift in Sources */,
+				9705998D2C02A2E700022DDC /* amplify/generated/models/Location+Schema.swift in Sources */,
+				970599942C02A2E700022DDC /* amplify/generated/models/User+Schema.swift in Sources */,
+				970599CF2C02A65B00022DDC /* NearbyUsersViewModel.swift in Sources */,
+				970599D12C02A65B00022DDC /* RowView.swift in Sources */,
+				970599C02C02A65B00022DDC /* LoginView.swift in Sources */,
+				97BC17F52C052A3E00FC1075 /* amplify/generated/models/Location+Schema.swift in Sources */,
+				E8CBFC07E748F6D0D6787030 /* User.swift in Sources */,
+				97BC17FD2C052A3E00FC1075 /* amplify/generated/models/UserStatus.swift in Sources */,
+				28FCED95B4E3420A2D507BD6 /* UserStatus.swift in Sources */,
+				97BC0B402C05255700FC1075 /* ChatViewModel.swift in Sources */,
+				97BDC6012C040F540095FFF7 /* Queries.swift in Sources */,
+				773C663696E10DBA44251BCC /* UserConversations+Schema.swift in Sources */,
+				EA5A2F6B928427E909C883A3 /* UserConversations.swift in Sources */,
+				2DA8AE70C033AE6009095407 /* amplify/generated/models/UserStatus.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9705945F2C02A12400022DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970594682C02A12400022DDC /* ProxiChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		970594692C02A12400022DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970594722C02A12400022DDC /* ProxiChatUITests.swift in Sources */,
+				970594742C02A12400022DDC /* ProxiChatUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		970594652C02A12400022DDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 970594502C02A12200022DDC /* ProxiChat */;
+			targetProxy = 970594642C02A12400022DDC /* PBXContainerItemProxy */;
+		};
+		9705946F2C02A12400022DDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 970594502C02A12200022DDC /* ProxiChat */;
+			targetProxy = 9705946E2C02A12400022DDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		970594752C02A12400022DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		970594762C02A12400022DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		970594782C02A12400022DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProxiChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 76C9YN5SQV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProxiChat/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Please enable";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "enable location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tarun.ProxiChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		970594792C02A12400022DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProxiChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 76C9YN5SQV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProxiChat/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Please enable";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "enable location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tarun.ProxiChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9705947B2C02A12400022DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tarun.ProxiChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProxiChat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProxiChat";
+			};
+			name = Debug;
+		};
+		9705947C2C02A12400022DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tarun.ProxiChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProxiChat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProxiChat";
+			};
+			name = Release;
+		};
+		9705947E2C02A12400022DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tarun.ProxiChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProxiChat;
+			};
+			name = Debug;
+		};
+		9705947F2C02A12400022DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tarun.ProxiChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProxiChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9705944C2C02A12200022DDC /* Build configuration list for PBXProject "ProxiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				970594752C02A12400022DDC /* Debug */,
+				970594762C02A12400022DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		970594772C02A12400022DDC /* Build configuration list for PBXNativeTarget "ProxiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				970594782C02A12400022DDC /* Debug */,
+				970594792C02A12400022DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9705947A2C02A12400022DDC /* Build configuration list for PBXNativeTarget "ProxiChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9705947B2C02A12400022DDC /* Debug */,
+				9705947C2C02A12400022DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9705947D2C02A12400022DDC /* Build configuration list for PBXNativeTarget "ProxiChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9705947E2C02A12400022DDC /* Debug */,
+				9705947F2C02A12400022DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		970594802C02A29A00022DDC /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.34.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		970594812C02A29A00022DDC /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 970594802C02A29A00022DDC /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		970594832C02A29A00022DDC /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 970594802C02A29A00022DDC /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		970594852C02A29A00022DDC /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 970594802C02A29A00022DDC /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		970594872C02A29A00022DDC /* AWSPluginsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 970594802C02A29A00022DDC /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPluginsCore;
+		};
+		970594892C02A29A00022DDC /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 970594802C02A29A00022DDC /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 970594492C02A12200022DDC /* Project object */;
+}
